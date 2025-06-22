@@ -1,0 +1,147 @@
+.about-us-container {
+  background-image: url('../../../assets/aboutimgs/websortHomeBGI2.png');
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin-top: 50px;
+}
+
+.hero-content {
+  width: 100%;
+  padding: 80px 5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(24px, 4vw, 48px);
+  font-weight: 800;
+  color: #f4f1f1;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: clamp(14px, 1.2vw, 20px);
+  color: #fff8f8;
+  line-height: 1.7;
+  margin: 0 auto 30px;
+  max-width: 900px;
+}
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cta-link {
+  border: 1px solid white;
+  height: 40px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  /*transition: all 0.3s;*/
+}
+
+
+.divider {
+  color: #aaa;
+  font-weight: 300;
+}
+
+.about-content {
+  width: 100%;
+  padding: 80px 5%;
+  background-image: url('../../../assets/aboutimgs/code_text_programming_192795_1920x1080.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-header h2 {
+  font-size: clamp(20px, 3vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.content-header h3 {
+  font-size: clamp(16px, 2vw, 24px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+.description p {
+  text-align: start;
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.description button {
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  width: 120px;
+  height: 40px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 60px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 6vw;
+  }
+
+  .about-content {
+    flex-direction: column;
+    padding: 60px 20px;
+  }
+
+  .content-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .cta-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .know-more-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

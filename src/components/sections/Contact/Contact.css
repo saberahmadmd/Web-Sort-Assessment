@@ -1,0 +1,134 @@
+.contact-container {
+  width: 100%;
+  color: #333;
+}
+
+.contact-header {
+  background: url('../../../assets/contactimgs/contactpage1.png') no-repeat center center / cover;
+  height: 80vh;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+  padding: 30px;
+}
+
+.contact-header h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.contact-header p {
+  font-size: 20px;
+  color: #1a1a1a;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.contact-content {
+  width: 100%;
+  background: #02012a;
+  overflow: hidden;
+}
+
+.contact-info {
+  width: 100%;
+  color: white;
+  padding: 60px 40px;
+}
+
+
+.contact-info p {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.support-text {
+  margin-top: 30px;
+  font-size: 16px;
+  color: #8da0d0;
+  max-width: 400px;
+}
+
+.contact-details {
+  background-color: #02012a;
+  width: 100%;
+  margin-top: -30px;
+}
+
+.contact-details h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.image-address {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-address img {
+  width: 500px;
+  height: 400px;
+  object-fit: fill;
+}
+
+.contact-details p {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.image-address div {
+  border: 1px solid white;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .contact-header h1 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .image-address {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h1 {
+    font-size: 32px;
+  }
+
+  .contact-header p {
+    font-size: 18px;
+  }
+
+  .contact-info p {
+    font-size: 22px;
+  }
+
+  .address-text {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .contact-details {
+    flex-direction: column;
+  }
+}

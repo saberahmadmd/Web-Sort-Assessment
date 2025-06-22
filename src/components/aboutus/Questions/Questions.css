@@ -1,0 +1,160 @@
+.questions-container {
+  background-image: url('../../../assets/aboutimgs/homeformbg.png');
+  width: 100%;
+  padding: 2.5% 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.questions-header {
+  text-align: center;
+  margin-bottom: 5%;
+  padding: 0 5%;
+}
+
+.questions-header h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5%;
+  color: #fff;
+}
+
+.questions-header p {
+  font-size: 1.8rem;
+  color: #fff;
+  max-width: 80%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.questions-content {
+  display: flex;
+  gap: 5%;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0 5%;
+}
+
+.questions-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  margin-bottom: 2.5%;
+}
+
+label {
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+}
+
+input,
+textarea {
+  padding: 2%;
+  border: 1px solid #ddd;
+  border-radius: 0.8rem;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 0.2rem rgba(66, 133, 244, 0.2);
+}
+
+textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 1.5% 3%;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 30%;
+}
+
+.submit-btn:hover {
+  background-color: #3367d6;
+}
+
+.cta-section {
+  background-image: url('../../../assets/aboutimgs/opportunityBGI.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 20px;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 5%;
+  line-height: 1.4;
+}
+
+.cta-section button {
+  background-color: #f442c5;
+  color: white;
+  border: none;
+  padding: 1.5% 3%;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 30%;
+}
+
+@media (max-width: 900px) {
+  .questions-content {
+    flex-direction: column;
+    gap: 4%;
+  }
+
+  .cta-section {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .submit-btn {
+    max-width: 100%;
+  }
+
+  .questions-header h1 {
+    font-size: 2.8rem;
+  }
+
+  .questions-header p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .questions-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .questions-content{
+    align-self: center;
+  }
+}
